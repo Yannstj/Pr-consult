@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Préconsult</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<header>
+    <img src="/images/Preconsult - Logo.svg">
+    <p>Préparer sa consultation médicale en ligne, c'est avoir plus de temps avec son médecin pour echanger sur ce qui compte</p>
+</header>
+          
+<body>
+
+    <div class="container">
+
+        <form  method="post" action="" class="form-patient">
+            
+            <div class="title">
+            <h1>Faisons connaissance</h1>
+            </div>
+
+            <div class="entry">
+                <h2>Entrez les initiales de votre prénom et de votre nom</h2>
+            
+            <label for="firstname"></label>
+            <input type="text" id="firstname" name="firstname"  minlength="1" maxlength="1" size="1">
+
+            <label for="lastname"></label>
+            <input type="text" id="lastname" name="lastname"  minlength="1" maxlength="1" size="1">
+
+           <p>Par exemple pour Jean Dupond : JD</p>
+            </div>
+
+            <div class="entry">
+                <h2>Médecin avec lequel vous avez rendez-vous</h2>
+                <select name="medecin" id="medecin" class="select-medecin">
+                    <!-- ajouter  en fin de tag -->
+                    <option value="" selected disabled>Sélectionnez votre médecin</option>
+                    <!-- <option value="medecinA">Médecin A</option>
+                    <option value="medecinB">Médecin B</option>
+                    <option value="medecinC">Médecin C</option>
+                    <option value="medecinD">Médecin D</option> -->
+                </select>
+                <!-- <i class="material-icons" id="arrow1">expand_more</i>   regler le css en last-->
+            </div>
+
+            <div class="entry">
+                <h2>Motif(s) de votre consultation</h2>
+                <select name="motif" id="motif" class="motif-consultation" >
+                    <!-- ajouter  en fin de tag -->
+                    <option value="" selected disabled>Sélectionnez votre ou vos motif(s) de consultation</option>
+                    <!-- <option id="douleur" value="douleur" onclick="">Douleur</option>
+                    <option id="renouvellement" value="renouvellement">Renouvellement / réévaluation de traitement
+                    </option>
+                    <option id="trouble-digestif" value="trouble-digestif">Trouble digestif</option>
+                    <option id="infection" value="infection">Infection (rhume, bouton, pus, cystite...)</option>
+                    <option id="trouble-humeur" value="trouble-humeur">Trouble de l'humeur (fatigue, insomnie,
+                        irritabilité, dépression, moment difficile dans une vie, fatigue inexpliquée, etc.)</option>
+                    <option id="dependance" value="dependance">Aide à l'arrêt d'une dépendance (alcool, tabac, drogue,
+                        comportement)</option>
+                    <option id="administrative" value="administrative">Procédure administrative</option> -->
+                </select>
+        
+                <div class="legend">
+                    <h3>Champs obligatoires</h2>
+                </div>
+            </div>
+
+
+            <!-- <div class="entry" id="point"></div> -->
+
+            <div class="btn-box">
+                <button class="btn-submit" type="submit">Envoyer</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
